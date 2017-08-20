@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.example.administrator.cm.activity.Personal">
+
+
+
+
+    <EditText
+        android:id="@+id/et_phone_login"
+        style="@style/margin_h"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:inputType="number"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/input_white_padding"
+        android:gravity="center_vertical"
+        android:hint="手机号"
+        android:padding="5dp"
+        android:textColor="@color/base_color_666"
+        android:textColorHint="@color/base_color_999"
+        android:drawablePadding="5dp"
+        android:drawableLeft="@drawable/ic_phone"
+        android:textSize="@dimen/common_small_fonts" />
+
+    <EditText
+        android:id="@+id/et_pwd_login"
+        style="@style/margin_h"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/et_phone_login"
+        android:inputType="textPassword"
+        android:drawablePadding="5dp"
+        android:drawableLeft="@drawable/ic_password"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/input_white_padding"
+        android:gravity="center_vertical"
+        android:hint="密码"
+        android:padding="5dp"
+        android:textColor="@color/base_color_666"
+        android:textColorHint="@color/base_color_999"
+        android:textSize="@dimen/common_small_fonts" />
+
+
+    <!--单选框布局-->
+    <LinearLayout
+        android:id="@+id/LL_switch"
+        android:layout_below="@+id/et_pwd_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+
+        <Switch
+            android:layout_marginLeft="200dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/switch1"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+
+            android:gravity="right"
+            android:text="Remember me"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_ok_login"
+        style="@style/margin_h"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/et_pwd_login"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/btn_common_selector"
+        android:text="登录"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_big_fonts" />
+
+    <TextView
+        android:id="@+id/tv_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/btn_ok_login"
+        android:layout_above="@+id/tv_register"/>
+
+
+    <TextView
+        android:id="@+id/tv_register"
+        android:layout_width="wrap_content"
+        android:text="没有账号？点我注册"
+        android:textColor="@color/base_color_999"
+        android:textSize="@dimen/common_small_fonts"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

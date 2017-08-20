@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CarManage.iml" filepath="$PROJECT_DIR$/CarManage.iml" />
+      <module fileurl="file://D:\Location\CarManage\EventBus\EventBus.iml" filepath="D:\Location\CarManage\EventBus\EventBus.iml" />
+      <module fileurl="file://D:\Location\CarManage\EventBusAnnotationProcessor\EventBusAnnotationProcessor.iml" filepath="D:\Location\CarManage\EventBusAnnotationProcessor\EventBusAnnotationProcessor.iml" />
+      <module fileurl="file://D:\Location\CarManage\EventBusPerformance\EventBusPerformance.iml" filepath="D:\Location\CarManage\EventBusPerformance\EventBusPerformance.iml" />
+      <module fileurl="file://D:\Location\CarManage\EventBusTest\EventBusTest.iml" filepath="D:\Location\CarManage\EventBusTest\EventBusTest.iml" />
+      <module fileurl="file://D:\Location\CarManage\EventBusTestSubscriberInJar\EventBusTestSubscriberInJar.iml" filepath="D:\Location\CarManage\EventBusTestSubscriberInJar\EventBusTestSubscriberInJar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://D:\Location\CarManage\baseadapter-recyclerview\baseadapter-recyclerview.iml" filepath="D:\Location\CarManage\baseadapter-recyclerview\baseadapter-recyclerview.iml" />
+      <module fileurl="file://D:\Location\CarManage\sample\sample.iml" filepath="D:\Location\CarManage\sample\sample.iml" />
+    </modules>
+  </component>
+</project>

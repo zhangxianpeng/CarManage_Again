@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.administrator.cm">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- 地图包、搜索包需要的基础权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <permission android:name="android.permission.WRITE_APN_SETTINGS" />
+    <!-- 定位包、导航包需要的额外权限（注：基础权限也需要） -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <!-- <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" /> -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/car"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/car"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+
+        <!-- 设置key -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="4b548a2e54a38f12eda8051ce3aef7e6" />
+        <!-- 声明定位service -->
+        <service android:name="com.amap.api.location.APSService" />
+
+        <meta-data
+            android:name="com.thinkland.juheapi.openid"
+            android:value="JHe44a876e7232776c60914de171f89e7c" />
+
+        <activity
+            android:name=".activity.Personal"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".activity.AddOil"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Location"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Route"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CarManage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Voilicate"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Register"
+            android:screenOrientation="portrait" />
+        <!-- 单独的背景音乐service -->
+        <service
+            android:name=".service.musicService"
+            android:exported="true"
+            android:process=":remote" />
+        <service android:name="com.cheshouye.api.client.WeizhangIntentService" />
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".activity.PetrolStation"></activity>
+    </application>
+
+</manifest>
